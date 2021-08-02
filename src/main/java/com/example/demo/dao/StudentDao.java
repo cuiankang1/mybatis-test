@@ -8,4 +8,6 @@ import java.util.List;
 @Repository
 public interface StudentDao {
     public List<Student> selectStudents();
+    public void insertStudent(Student student);
+    public void updateStudent(Student student);
 }

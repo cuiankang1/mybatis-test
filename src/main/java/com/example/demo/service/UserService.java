@@ -14,4 +14,10 @@ public class UserService {
     public List<Student> selectStudents(){
         return studentDao.selectStudents();
     }
+    public void insertStudent(Student student){
+        studentDao.insertStudent(student);
+    }
+    public void updateStudent(Student student){
+        studentDao.updateStudent(student);
+    }
 }

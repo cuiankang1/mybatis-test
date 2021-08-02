@@ -6,4 +6,10 @@
     <select id="selectStudents" resultType="com.example.demo.domain.Student">
     select * from test_user
   </select>
+    <insert id="insertStudent">
+        insert into test_user values(#{id},#{name},#{age},#{des})
+    </insert>
+    <update id="updateStudent">
+        update test_user set name=#{name},age=#{age},des=#{des} where id=#{id}
+    </update>
 </mapper>
